@@ -1,0 +1,111 @@
+.team-item-area {
+    background-color: #fff;
+    margin-bottom: 30px
+}
+
+.team-item-area .team-content {
+    text-align: center;
+    padding: 25px 15px
+}
+
+.team-item-area .team-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 6px
+}
+
+.team-item-area .team-content span {
+    font-size: 14px
+}
+
+.team-item-area .team-content .team-social {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 15px
+}
+
+.team-item-area .team-content .team-social li {
+    display: inline-block;
+    margin-right: 10px
+}
+
+.team-item-area .team-content .team-social li:last-child {
+    margin-right: 0
+}
+
+.team-item-area .team-content .team-social i {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    border: 1px solid #5bc4e9;
+    border-radius: 50px;
+    color: #5bc4e9;
+    font-size: 12px;
+    -webkit-transition: .5s;
+    transition: .5s
+}
+
+.team-item-area .team-content .team-social i:hover {
+    background-color: #5bc4e9;
+    color: #fff
+}
+
+.team-animation .shape-img1 {
+    position: absolute;
+    left: 12%;
+    top: 14%;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    -webkit-animation: moveLeftBounce 3s linear infinite;
+    animation: moveLeftBounce 3s linear infinite
+}
+
+.team-animation .shape-img2 {
+    position: absolute;
+    right: 16%;
+    left: auto;
+    top: 5%;
+    -webkit-transform: translateY(-20%) translateX(-15%);
+    transform: translateY(-20%) translateX(-15%);
+    z-index: -1;
+    -webkit-animation: animationFramesOne 20s linear infinite;
+    animation: animationFramesOne 20s linear infinite
+}
+
+.team-animation .shape-img3 {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    right: 10%;
+    left: auto;
+    -webkit-animation: rotate3d 4s linear infinite;
+    animation: rotate3d 4s linear infinite
+}
+
+.team-animation .shape-img4 {
+    position: absolute;
+    z-index: -1;
+    bottom: 30%;
+    left: 15%;
+    -webkit-animation: animationFramesOne 20s linear infinite;
+    animation: animationFramesOne 20s linear infinite
+}
+
+.team-animation .shape-img5 {
+    position: absolute;
+    z-index: -1;
+    bottom: 25%;
+    left: auto;
+    right: 18%;
+    -webkit-animation: moveLeftBounce 3s linear infinite;
+    animation: moveLeftBounce 3s linear infinite
+}
+.team-section {
+    position: relative;
+    background-color: #f5f5ff;
+    overflow: hidden;
+    z-index: 1
+}

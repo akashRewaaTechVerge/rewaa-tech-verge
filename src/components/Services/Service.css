@@ -1,0 +1,175 @@
+.services-section {
+    background-color: #f6f5fb;
+    position: relative;
+    z-index: 1;
+    overflow: hidden
+}
+
+.single-services-box {
+    position: relative;
+    background: #fff;
+    border-radius: 2px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    padding: 30px;
+    margin-bottom: 30px
+}
+
+.single-services-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #202647;
+    font-weight: 600;
+    -webkit-transition: .5s;
+    transition: .5s;
+    text-transform: capitalize
+}
+
+.single-services-box h3 a:hover {
+    text-decoration: underline
+}
+
+.single-services-box p {
+    margin: 0;
+    -webkit-transition: .5s;
+    transition: .5s
+}
+
+.single-services-box .icon {
+    text-align: center;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: inline-block;
+    margin-bottom: 20px
+}
+
+.single-services-box .icon.bg-faddd4 {
+    color: #fa9979;
+    background: #faddd4
+}
+
+.single-services-box .icon.bg-cafbf1 {
+    color: #23b396;
+    background: #cafbf1
+}
+
+.single-services-box .icon.bg-ddd5fb {
+    color: #8973d9;
+    background: #ddd5fb
+}
+
+.single-services-box .icon.bg-fcdeee {
+    color: #2babe3;
+    background: #fcdeee
+}
+
+.single-services-box .icon.bg-c5ebf9 {
+    color: #37acd7;
+    background: #c5ebf9
+}
+
+.single-services-box .icon.bg-f8fbd5 {
+    color: #eddf39;
+    background: #f8fbd5
+}
+
+.single-services-box .icon i:before {
+    font-size: 30px
+}
+
+.single-services-box:hover {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, .08);
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, .08);
+    background-color: #2babe3
+}
+
+.single-services-box:hover .icon {
+    background: #fff;
+    color: #2babe3
+}
+
+.single-services-box:hover .icon.bg-faddd4 {
+    background: #fff
+}
+
+.single-services-box:hover h3, .single-services-box:hover h3 a, .single-services-box:hover p {
+    color: #fff
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px
+}
+
+.section-title span {
+    font-size: 14px;
+    color: #2babe3;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px
+}
+
+.section-title h3 {
+    font-size: 38px;
+    color: #202647;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    padding-bottom: 20px
+}
+
+.section-title h3:before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 80px;
+    background-color: #fab4a2;
+    bottom: 0;
+    left: 0;
+    right: 35px;
+    margin: auto
+}
+
+.section-title h3:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 32px;
+    background-color: #ff724e;
+    bottom: 0;
+    margin: 0 auto;
+    left: 95px;
+    right: 0
+}
+
+.bg-fafafa {
+    background-color: #fafafa
+}
+
+.pb-70 {
+    padding-bottom: 70px;
+}
+.pt-100, .ptb-100 {
+    padding-top: 100px;
+}
+
+@media only screen and (max-width: 767px)
+{.section-title h3 {
+    font-size: 22px;
+    margin: 8px 0 0;
+}
+.pb-70 {
+    padding-bottom: 20px;
+}
+.pt-100, .ptb-100 {
+    padding-top: 50px;
+}
+}
+

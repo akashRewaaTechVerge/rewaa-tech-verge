@@ -1,0 +1,236 @@
+.tab-section {
+    line-height: 1
+}
+.section-title {
+    margin-bottom: 40px
+}
+.section-title h3 {
+    font-size: 38px;
+    color: #202647;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.section-title span {
+    font-size: 13px
+}
+
+
+.tab-section {
+    line-height: 1
+}
+
+.tab .tabs_item {
+    display: none
+}
+
+.tab .tabs_item:first-child {
+    display: block
+}
+
+.boosting-list-tab .tabs {
+    padding-left: 0;
+    list-style-type: none;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: 20px
+}
+
+.boosting-list-tab .tabs li {
+    -webkit-flex: 0 0 16.6666666667%;
+    -moz-box-flex: 0;
+    flex: 0 0 16.6666666667%;
+    max-width: 15.6666666667%;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: block;
+    border-radius: 2px;
+    color: #292a2c;
+    -webkit-box-shadow: 0 10px 40px 0 rgba(107, 125, 179, .11);
+    box-shadow: 0 10px 40px 0 rgba(107, 125, 179, .11);
+    padding: 15px 18px 18px;
+    font-size: 15px;
+    font-weight: 700
+}
+
+.boosting-list-tab .tabs li i {
+    color: #2babe3;
+    -webkit-transition: .5s;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: normal
+}
+
+.boosting-list-tab .tabs li span {
+    display: block;
+    margin-top: 10px
+}
+
+.boosting-list-tab .tabs li.bg-eff7e9 {
+    background: -webkit-gradient(linear, left top, right top, from(#f3fbed), color-stop(#f1f9eb), color-stop(#f0f7e9), color-stop(#eef5e8), to(#ecf3e6));
+    background: -webkit-linear-gradient(left, #f3fbed, #f1f9eb, #f0f7e9, #eef5e8, #ecf3e6);
+    background: linear-gradient(90deg, #f3fbed, #f1f9eb, #f0f7e9, #eef5e8, #ecf3e6)
+}
+
+.boosting-list-tab .tabs li.bg-eff7e9 i {
+    color: #53ba05
+}
+
+.boosting-list-tab .tabs li.bg-fff8f0 {
+    background: -webkit-gradient(linear, left top, right top, from(#fff8f0), color-stop(#fdf6ee), color-stop(#fbf4ec), color-stop(#f9f2ea), to(#f7f0e8));
+    background: -webkit-linear-gradient(left, #fff8f0, #fdf6ee, #fbf4ec, #f9f2ea, #f7f0e8);
+    background: linear-gradient(90deg, #fff8f0, #fdf6ee, #fbf4ec, #f9f2ea, #f7f0e8)
+}
+
+.boosting-list-tab .tabs li.bg-fff8f0 i {
+    color: #e3841a
+}
+
+.boosting-list-tab .tabs li.bg-ecfaf7 {
+    background: -webkit-gradient(linear, left top, right top, from(#ecfaf7), color-stop(#eaf8f5), color-stop(#e8f6f3), color-stop(#e7f4f1), to(#e5f2ef));
+    background: -webkit-linear-gradient(left, #ecfaf7, #eaf8f5, #e8f6f3, #e7f4f1, #e5f2ef);
+    background: linear-gradient(90deg, #ecfaf7, #eaf8f5, #e8f6f3, #e7f4f1, #e5f2ef)
+}
+
+.boosting-list-tab .tabs li.bg-ecfaf7 i {
+    color: #04b994
+}
+
+.boosting-list-tab .tabs li.bg-f2f0fb {
+    background: -webkit-gradient(linear, left top, right top, from(#f2f0fb), color-stop(#f2f0fb), color-stop(#f2f0fb), color-stop(#f2f0fb), to(#f2f0fb));
+    background: -webkit-linear-gradient(left, #f2f0fb, #f2f0fb, #f2f0fb, #f2f0fb, #f2f0fb);
+    background: linear-gradient(90deg, #f2f0fb, #f2f0fb, #f2f0fb, #f2f0fb, #f2f0fb)
+}
+
+.boosting-list-tab .tabs li.bg-f2f0fb i {
+    color: #775dda
+}
+
+.boosting-list-tab .tabs li.bg-c5ebf9 {
+    background: -webkit-gradient(linear, left top, right top, from(#c5ebf9), color-stop(#c5ebf9), color-stop(#c5ebf9), color-stop(#c5ebf9), to(#c5ebf9));
+    background: -webkit-linear-gradient(left, #c5ebf9, #c5ebf9, #c5ebf9, #c5ebf9, #c5ebf9);
+    background: linear-gradient(90deg, #c5ebf9, #c5ebf9, #c5ebf9, #c5ebf9, #c5ebf9)
+}
+
+.boosting-list-tab .tabs li.bg-c5ebf9 i {
+    color: #37acd7
+}
+
+.boosting-list-tab .tabs li.current, .boosting-list-tab .tabs li:hover {
+    background: #2babe3;
+    color: #fff;
+    -webkit-box-shadow: 0 10px 40px 0 rgba(0, 0, 255, .22);
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 255, .22)
+}
+
+.boosting-list-tab .tabs li.current i, .boosting-list-tab .tabs li:hover i {
+    color: #fff
+}
+
+.boosting-list-tab .tab_content {
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, .07);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .07);
+    background-color: #fff;
+    padding: 50px 30px;
+    position: relative
+}
+
+.boosting-list-tab .tab_content .tabs_item .content h2 {
+    font-size: 18px;
+    color: #202647;
+    font-weight: 600;
+    margin: 0 0 16px;
+    text-transform: uppercase
+}
+
+.boosting-list-tab .tab_content .tabs_item .content p {
+    margin: 0
+}
+
+.boosting-list-tab .tab_content .tabs_item .tab-text-content {
+    margin-top: 20px;
+    position: relative;
+    padding-left: 60px
+}
+
+.boosting-list-tab .tab_content .tabs_item .tab-text-content i {
+    color: #e84f1c;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.boosting-list-tab .tab_content .tabs_item .tab-text-content i:before {
+    font-size: 40px;
+    line-height: normal
+}
+
+.boosting-list-tab .tab_content .tabs_item .tab-text-content p {
+    font-size: 14px;
+    margin: 0
+}
+
+.boosting-list-tab .tab_content .tabs_item .tab-btn {
+    margin-top: 25px
+}
+
+.boosting-list-tab .tab_content .tabs_item .tab-shape {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 165px
+}
+
+.tabs-item {
+    display: none
+}
+
+.tabs-item:first-child {
+    display: block
+}
+
+@media only screen and (max-width: 767px){
+.pb-70 {
+    padding-bottom: 20px;
+}
+.pt-100, .ptb-100 {
+    padding-top: 50px;
+}
+.section-title {
+    margin-bottom: 40px;
+}
+.boosting-list-tab .tabs li i {
+    font-size: 30px;
+}
+.boosting-list-tab .tabs li {
+    -webkit-flex: 0 0 48%;
+    -moz-box-flex: 0;
+    flex: 0 0 48%;
+    max-width: 46%;
+    font-size: 15px;
+    padding: 12px 10px;
+}
+.boosting-list-tab .tabs li span {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+}
+.boosting-list-tab .tabs li.bg-c5ebf9, .boosting-list-tab .tabs li.bg-ecfaf7, .boosting-list-tab .tabs li.bg-eff7e9, .boosting-list-tab .tabs li.bg-f2f0fb, .boosting-list-tab .tabs li.bg-fff8f0 {
+    background: unset
+}
+
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
