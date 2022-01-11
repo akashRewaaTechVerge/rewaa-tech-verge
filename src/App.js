@@ -1,33 +1,28 @@
 
 import './App.css';
-import About from './components/About/About';
-import Analysis from './components/Analysis/Analysis';
-import Banner from './components/Banner/Banner';
-import Boost from './components/Boosting/Boost';
-import ChooseUs from './components/ChooseUs/ChooseUs';
-import Features from './components/Feature/Features';
-import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
-import Projects from './components/Projects/Projects';
-import Service from './components/Services/Service';
-import Team from './components/Team/Team';
-import Testimonial from './components/Testimonial/Testimonial';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { ContactUs, Main } from './Pages';
+import { Footer, Navbar } from './components';
+import { BackToTop } from './components';
+import Whatsapp from './components/Whatsapp/Whatsapp';
+
+
 
 function App() {
+
   return (
     <>
-    <Navbar/>
-    <Banner/>
-    <Features/>
-    <About/>
-    <Service/>
-    <ChooseUs/>
-    <Boost/>
-    <Projects/>
-    <Team/>
-    <Testimonial/>
-    <Analysis/>
-    <Footer/>
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<Main />}></Route>
+          <Route path="/contactUs" element={<ContactUs />}></Route>
+          <Route path="/" />
+        </Routes>
+      <Footer/>
+      </Router>
+      <Whatsapp/>
+      <BackToTop />
     </>
   );
 }

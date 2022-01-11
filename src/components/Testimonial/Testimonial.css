@@ -109,12 +109,12 @@
     margin: 0
 }
 
-.testimonial-slides.owl-theme .owl-dots {
+.testimonial-slides .owl-theme .owl-dots {
     line-height: 1;
     margin-top: 30px !important
 }
 
-.testimonial-slides.owl-theme .owl-dots .owl-dot span {
+.testimonial-slides .owl-theme .owl-dots .owl-dot span {
     width: 15px;
     height: 15px;
     margin: 0 5px;
@@ -124,7 +124,7 @@
     border-radius: 50px
 }
 
-.testimonial-slides.owl-theme .owl-dots .owl-dot.active span, .testimonial-slides.owl-theme .owl-dots .owl-dot:hover span {
+.testimonial-slides .owl-theme .owl-dots .owl-dot.active span, .testimonial-slides.owl-theme .owl-dots .owl-dot:hover span {
     background-color: #2babe3
 }
 

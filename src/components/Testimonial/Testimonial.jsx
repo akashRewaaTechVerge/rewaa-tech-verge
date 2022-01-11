@@ -1,9 +1,23 @@
 import React from 'react'
 import './Testimonial.css'
+import OwlCarousel from 'react-owl-carousel2';
+import { MdFormatQuote } from 'react-icons/md'
+import one from '../../images/client-image/4.jpg'
+import { testimonialData } from '../../data/testimonialData';
 const Testimonial = () => {
+    const options = {
+        items: 1,
+        nav: false,
+        rewind: true,
+        loop: false,
+        autoplay: true,
+        dots: true,
+        responsiveClass: true
+
+    };
     return (
         <div>
-            <section className="testimonial-section ptb-100">
+            <section className="testimonial-section ptb-100" >
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-4">
@@ -14,11 +28,38 @@ const Testimonial = () => {
                                     viverra maecenas accumsan lacus.Lorem is simply dummy text of the printing and
                                     typesetting industry.</p>
                             </div>
+
                         </div>
-                        <div className="col-lg-8"></div>
                     </div>
+                
                 </div>
             </section>
+            <div className="col col-md-4">
+
+<OwlCarousel options={options} className="owl-theme">
+    <div className='testimonial-slides'>
+        {testimonialData.map((data, key) => {
+            return (
+                <div className="testimonial-single-item">
+                    <div className='testimonial-image'>
+                        <img src={data.profileImg} alt='myImage' />
+                    </div>
+                    <div className='testimonial-content-text'>
+                        <h3>{data.name}</h3>
+                        <span>{data.role}</span>
+                        <div className='icon'>
+                            <i><MdFormatQuote /></i>
+                            <p>{data.desc}</p>
+                        </div>
+                    </div>
+                </div>
+            )
+        })}
+    </div>
+</OwlCarousel>
+
+
+</div>
         </div>
     )
 }

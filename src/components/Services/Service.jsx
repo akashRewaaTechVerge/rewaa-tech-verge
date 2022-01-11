@@ -5,12 +5,11 @@ import fifteen from '../../images/shape/15.png'
 import thirteen from '../../images/shape/13.svg'
 import twel from '../../images/shape/12.svg'
 import './Service.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { serviceData } from '../../data/serviceData';
 const Service = () => {
     return (
         <div>
-            <section className="services-section pt-100 pb-70">
+            <section className="services-section pt-100 pb-70" id="service">
                 <div className="container">
                     <div className="section-title"><span>Services</span>
                         <h3>How We Can Help?</h3>
@@ -19,7 +18,7 @@ const Service = () => {
                         {
                             serviceData.map((data,key)=>{
                                 return(
-                                    <div className="col-lg-4 col-md-6 col-sm-6">
+                                    <div className="col-lg-6 col-md-6 col-sm-6">
                             <div className="single-services-box">
                                 <div className={`icon ${data.cartColor}`}><i>{data.serviceIcon}</i></div>
                                 <h3><a href="single-service/index.html">{data.title}</a></h3>

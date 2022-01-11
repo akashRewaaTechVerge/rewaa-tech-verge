@@ -6,6 +6,7 @@ import fourteen from '../../images/shape/14.png'
 import fifteen from '../../images/shape/15.png'
 import twel from '../../images/shape/12.svg'
 import thirteen from '../../images/shape/13.svg'
+import logo from '../../images/logoOutline.png'
 import './Footer.css'
 const Footer = () => {
     return (
@@ -13,14 +14,14 @@ const Footer = () => {
             <footer className="footer-section pt-100 pb-70">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-4 col-md-6 col-sm-6">
+                        <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="footer-area">
                                 <div className="footer-heading">
-                                    <h3>About Us</h3>
+                                    <h3>
+                                        <img alt='logo' className='footer-logo' src={logo} />
+                                    </h3>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-                                    viverra</p>
+                                <p>We Build A Better Future With Tech</p>
                                 <ul className="footer-social">
                                     <li><a href="https://www.linkedin.com/" className="bg-3955bc"><i><FaLinkedinIn /></i></a></li>
                                     <li><a href="https://www.facebook.com/" className="bg-1da1f2"><i><FaFacebookF /></i></a></li>
@@ -32,45 +33,54 @@ const Footer = () => {
                         <div className="col-lg-2 col-md-6 col-sm-6">
                             <div className="footer-item-area">
                                 <div className="footer-heading">
-                                    <h3>Important Links</h3>
+                                    <h3>Services</h3>
                                 </div>
                                 <ul className="footer-quick-links">
-                                    <li><a href="about-us/index.html">About Us</a></li>
-                                    <li><a href="projects/index.html">Project</a></li>
-                                    <li><a href="services/index.html">Services</a></li>
-                                    <li><a href="team/index.html">Team</a></li>
-                                    <li><a href="contact/index.html">Contact</a></li>
+                                    <li><a href="about-us/index.html">Mobile Application</a></li>
+                                    <li><a href="projects/index.html">Custom Software</a></li>
+                                    <li><a href="services/index.html">Web Application</a></li>
+                                    <li><a href="team/index.html">UI/UX Design</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-lg-2 col-md-6 col-sm-6">
                             <div className="footer-item-area">
                                 <div className="footer-heading">
-                                    <h3>Featured Service</h3>
+                                    <h3>Who Are We</h3>
                                 </div>
                                 <ul className="footer-quick-links">
-                                    <li><a href="single-service/index.html">SEO Marketing</a></li>
-                                    <li><a href="single-service/index.html">SEO Services</a></li>
-                                    <li><a href="single-service/index.html">Services</a></li>
-                                    <li><a href="single-service/index.html">Pay-Per-Click</a></li>
-                                    <li><a href="single-service/index.html">Social Media</a></li>
+                                    <li><a href="single-service/index.html">Our Core Values</a></li>
+                                    <li><a href="single-service/index.html">Our Vision</a></li>
+                                    <li><a href="single-service/index.html">Our Goal</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6">
+                        <div className="col-lg-2 col-md-6 col-sm-6">
+                            <div className="footer-item-area">
+                                <div className="footer-heading">
+                                    <h3>Company</h3>
+                                </div>
+                                <ul className="footer-quick-links">
+                                    <li><a href="single-service/index.html">About Us</a></li>
+                                    <li><a href="single-service/index.html">Contact</a></li>
+                                    <li><a href="single-service/index.html">Career</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="mb-30">
                                 <div className="footer-heading">
                                     <h3>Contact</h3>
                                 </div>
                                 <div className="footer-info-contact"><i><IoIosCall /></i>
-                                    <h3>Phone</h3><span>(882) 569-7565</span>
+                                    <h3>Phone</h3><span>+91 8799315884</span>
                                 </div>
                                 <div className="footer-info-contact"><i><FaEnvelope /></i>
                                     <h3>Email</h3><span><a
                                     >info@rewaatechverge.com</a></span>
                                 </div>
-                                <div className="footer-info-contact"><i><FaLocationArrow/></i>
-                                    <h3>Address</h3><span>123, Western Road, Melbourne Australia</span>
+                                <div className="footer-info-contact"><i><FaLocationArrow /></i>
+                                    <h3>Address</h3><span>E-809, Titanium City Center, 100 Feet Road, Satellite, Ahemdabad 380015</span>
                                 </div>
                             </div>
                         </div>

@@ -4,7 +4,7 @@ import analysis from '../../images/analysis-image.svg'
 const Analysis = () => {
     return (
         <div>
-            <section className="analysis-section">
+            <section className="analysis-section" id='contact'>
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-12">

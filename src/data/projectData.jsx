@@ -1,39 +1,57 @@
-import one from '../images/project/1.jpg'
-import two from '../images/project/2.jpg'
-import three from '../images/project/3.jpg'
-import four from '../images/project/4.jpg'
-import five from '../images/project/5.jpg'
-import six from '../images/project/6.jpg'
+import one from '../images/project/bike.jpg'
+import helth from '../images/project/health.jpg'
+import resto from '../images/project/resto.jpg'
+import travel from '../images/project/travel.jpg'
+import estate from '../images/project/real.jpg'
+import edu from '../images/project/edu.jpg'
+import bank from '../images/project/bank.jpg'
+import enter from '../images/project/enter.jpg'
+import gov from '../images/project/gov.jpg'
 export const projectData = [
     {
         id: 1,
-        title: "Branding",
+        title: "Bike Ride",
         image: one
     },
     {
         id: 2,
-        title: "Marketing",
-        image: two
+        title: "Health Care",
+        image: helth
     },
     {
         id: 3,
-        title: "SEO",
-        image: three
+        title: "Restaurant",
+        image: resto
     },
     {
         id: 4,
-        title: "Web Design",
-        image: four
+        title: "Travel",
+        image: travel
     },
     {
         id: 5,
-        title: "Web Devlopement",
-        image: five
+        title: "Real Estate",
+        image: estate
     },
     {
         id: 6,
-        title: "Digital marketing",
-        image: six
+        title: "Education",
+        image: edu
+    },
+    {
+        id: 7,
+        title: "Banking",
+        image: bank
+    },
+    {
+        id: 8,
+        title: "Entertainment",
+        image: enter
+    },
+    {
+        id: 6,
+        title: "Government",
+        image: gov
     }
 
 

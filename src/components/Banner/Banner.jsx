@@ -26,14 +26,14 @@ import eleven from '../../images/shape/11.png'
 const Banner = () => {
     return (
         <div>
-            <div className="main-banner">
+            <div className="main-banner" id='/'>
                 <div className="d-table">
                     <div className="d-table-cell">
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col-lg-6 col-md-12">
                                     <div className="main-banner-content">
-                                        <h1>We Build A Better Future With Tech</h1>
+                                        <h1>"We Build A Better Future With Tech"</h1>
                                         <p>Want to work with us?</p>
                                         <div className="banner-btn"><a className="default-btn-one" href="about-us/index.html">
                                             We Are Hiring</a>

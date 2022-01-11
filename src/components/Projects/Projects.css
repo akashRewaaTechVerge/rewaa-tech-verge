@@ -51,5 +51,10 @@
 
 .single-project-box:hover img {
     -webkit-transition: .5s;
-    transition: .5s
+    transition: .5s;
+
+}
+.single-project-box img {
+    width: fit-content;
+    
 }
