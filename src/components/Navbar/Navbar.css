@@ -148,6 +148,15 @@
     visibility: hidden
 }
 
+.nav-link a{
+    display: flex;
+    flex-direction: column !important;
+    padding: 10px;
+    font-size:medium;
+}
+
+
+
 .neemo-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
     color: #696997;
     text-transform: capitalize

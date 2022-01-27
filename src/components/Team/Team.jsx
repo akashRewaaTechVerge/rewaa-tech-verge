@@ -18,7 +18,7 @@ const Team = () => {
                                return(
                                 <div className="col-lg-4 col-sm-6">
                                 <div className="team-item-area">
-                                    <div className="team-image"><img src={data.teamImg} alt="image1" /></div>
+                                    <div className="team-image"><img src={data.teamImg} height={data.size} alt="image1" /></div>
                                     <div className="team-content">
                                         <h3>{data.name}</h3><span>{data.role}</span>
                                         <ul className="team-social">

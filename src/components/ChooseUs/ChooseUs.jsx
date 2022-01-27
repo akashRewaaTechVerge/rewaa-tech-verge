@@ -18,7 +18,7 @@ boost-up their business.</p><br/>
 you are an entrepreneur and really looking for a technology partner then shake hand with us, and kick-start
 your startup with Rewaa Tech Verge services.!!!</p>
                                 <div className="choose-text"><i><FaCheck/></i>
-                                    <h4>Web</h4>
+                                    <h4>Web Application</h4>
                                     <p>Get the best affordable web solution for your business.</p>
                                 </div>
                                 <div className="choose-text"><i><FaCheck/></i>

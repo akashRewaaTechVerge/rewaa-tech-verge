@@ -23,6 +23,8 @@ import five from '../../images/shape/5.png'
 import six from '../../images/shape/6.png'
 import ten from '../../images/shape/10.png'
 import eleven from '../../images/shape/11.png'
+import { NavHashLink as NavLink } from 'react-router-hash-link';
+
 const Banner = () => {
     return (
         <div>
@@ -35,8 +37,8 @@ const Banner = () => {
                                     <div className="main-banner-content">
                                         <h1>"We Build A Better Future With Tech"</h1>
                                         <p>Want to work with us?</p>
-                                        <div className="banner-btn"><a className="default-btn-one" href="about-us/index.html">
-                                            We Are Hiring</a>
+                                        <div className="banner-btn"><NavLink className="default-btn-one" to="/#boost">
+                                            We Are Hiring</NavLink>
                                             {/* <div className="video-btn popup-youtube">Watch Video <i><FaPlay/></i></div> */}
                                         </div>
                                     </div>

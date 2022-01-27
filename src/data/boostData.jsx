@@ -7,16 +7,6 @@ import tab5 from '../images/tab/5.jpg'
 import tab6 from '../images/tab/6.jpg'
 export const boostData = [
     {
-        tabName:"bde",
-        title: "BDE/BDM",
-        desc: 'Experience :- 1.5+ Years',
-        desc1: 'Position - 1',
-        leftDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-        rightDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-        btnTitle:"Apply",
-        tab1Img:tab1
-    },
-    {
         tabName:"web",
         title: "Web Design",
         desc: 'Experience :- 2-3 Years',
@@ -51,6 +41,16 @@ export const boostData = [
         rightDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
         btnTitle:"Apply",
         tab5Img:tab5
+    },
+    {
+        tabName:"bde",
+        title: "BDE/BDM",
+        desc: 'Experience :- 1.5+ Years',
+        desc1: 'Position - 1',
+        leftDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        rightDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        btnTitle:"Apply",
+        tab1Img:tab1
     },
 
 ]

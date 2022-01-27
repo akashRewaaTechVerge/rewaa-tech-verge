@@ -14,4 +14,5 @@ export { default as Service } from './Services/Service'
 export { default as Sidebar } from './Sidebar/Sidebar'
 export { default as Team } from './Team/Team'
 export { default as Testimonial } from './Testimonial/Testimonial'
+export { default as Contact } from './Contact/Contact'
 

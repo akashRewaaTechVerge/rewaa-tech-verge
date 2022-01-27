@@ -24,6 +24,10 @@ const Navbar = () => {
     }, []);
 
     const isMobile = windowDimension <= 640;
+    const active={
+        color:'#2babe3'
+    }
+
     return (
         <Styles.Wrapper>
             <CSSReset />
@@ -51,7 +55,7 @@ const Navbar = () => {
                                                     Service
                                                 </MobileNavbar.Item>
                                             </NavLink>
-                                            <NavLink to="/ContactUs" smooth={true} spy='true' duration={2000}>
+                                            <NavLink to="/#Contact" smooth={true} spy='true' duration={2000}>
                                             <MobileNavbar.Item>
                                                 <MobileNavbar.Icon>
                                                     <MdOutlineContactPage size={16} />
@@ -59,30 +63,34 @@ const Navbar = () => {
                                                 Contact
                                             </MobileNavbar.Item>
                                             </NavLink>
+                                            <NavLink to="/Career" smooth={true} spy='true' duration={2000}>
                                             <MobileNavbar.Item>
                                                 <MobileNavbar.Icon>
                                                     <FiPocket size={16} />
                                                 </MobileNavbar.Icon>
                                                 Career
                                             </MobileNavbar.Item>
+                                            </NavLink>
+                                            <NavLink to="/#WhoAreWe" smooth={true} spy='true' duration={2000}>
                                             <MobileNavbar.Item>
                                                 <MobileNavbar.Icon>
                                                     <FiInfo size={16} />
                                                 </MobileNavbar.Icon>
                                                 WhoAreWe
                                             </MobileNavbar.Item>
+                                            </NavLink>
                                         </MobileNavbar.Items>
                                     </MobileNavbar.Wrapper>
                                     :
                                     <nav className="navbar navbar-expand-md navbar-light"><a className="navbar-brand" href="index.html" style={{ display: 'inline-block' }}><img
                                         src={logo} alt="logo" style={{ width: 'auto', height: '60px', marginRight: '5px', float: 'left' }} /><span style={{ float: 'right', marginRight: '15px', marginTop: '5px', fontWeight: '600', fontSize: '2rem' }}>Rewaa<div style={{ float: 'revert', margin: '-10%', textAlign: 'center' }}>TechVerge</div></span></a>
                                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                            <ul className="navbar-nav">
-                                                <li className="nav-item"><NavLink to="/#" smooth={true} spy='true' duration={2000} activeClassName='nav-link' activeStyle={{ color: 'red' }}> Home</NavLink></li>
-                                                <li className="nav-item"><NavLink to="/#service" smooth={true} spy='true' duration={2000} activeClassName='nav-link' activeStyle={{ color: 'red' }}>Services </NavLink></li>
-                                                <li className="nav-item"><Link to="/ContactUs" smooth={true} spy='true' duration={2000} activeClassName='nav-link' activeStyle={{ color: 'red' }}>Contact</Link></li>
-                                                <li className="nav-item"><NavLink to="/#career" smooth={true} spy='true' duration={2000} activeClassName='nav-link' activeStyle={{ color: 'red' }}>Career</NavLink></li>
-                                                <li className="nav-item"><NavLink to="/#wrw" smooth={true} spy='true' duration={2000} activeClassName='nav-link' activeStyle={{ color: 'red' }}>Who Are We</NavLink>
+                                            <ul className="navbar-nav ">
+                                                <li className="nav-link "><NavLink to="/#" activeClassName='nav-item' activeStyle={active} smooth={true} spy='true' duration={2000} > Home</NavLink></li>
+                                                <li className="nav-link "><NavLink to="/#service" activeClassName='nav-item' smooth={true} spy='true' duration={2000} >Services </NavLink></li>
+                                                <li className="nav-link"><NavLink to="/#Contact" activeClassName='nav-item' smooth={true} spy='true' duration={2000} >Contact</NavLink></li>
+                                                <li className="nav-link"><NavLink to="/Career" activeClassName='nav-item' smooth={true} spy='true' duration={2000} >Career</NavLink></li>
+                                                <li className="nav-link"><NavLink to="/#wrw" activeClassName='nav-item' smooth={true} spy='true' duration={2000} >Who Are We</NavLink>
                                                 </li>
                                             </ul>
                                         </div>

@@ -1,5 +1,6 @@
 import React from 'react'
-import { About, Banner, ChooseUs,Features, Service, Boosting, Projects, Team, Testimonial, Analysis } from '../../components'
+import { About, Banner, ChooseUs,Features, Service, Boosting, Projects, Team, Testimonial, Contact } from '../../components'
+
 
 const Main = () => {
     return (
@@ -14,7 +15,7 @@ const Main = () => {
             <Projects />
             <Team />
             {/* <Testimonial /> */}
-            <Analysis />
+            <Contact/>
         </div>
     )
 }

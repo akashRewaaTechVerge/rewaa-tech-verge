@@ -4,7 +4,7 @@ import about_image from '../../images/about-image.svg'
 const About = () => {
     return (
         <div>
-            <div class="pb-100 mt-5">
+            <div class="pb-100 mt-5" id='wrw'>
                 <section class="about-section">
                     <div class="container">
                         <div class="row align-items-center">
@@ -12,7 +12,7 @@ const About = () => {
                                 <div class="about-image"><img src={about_image} alt="image1" /></div>
                             </div>
                             <div class="col-lg-6 col-md-12">
-                                <div class="about-area-content"><span>About Us</span>
+                                <div class="about-area-content"><span>Who Are We</span>
                                     <h3>Turning Digital Dreams Into Digital Reality</h3><strong>Rewaa Tech Verge is an organization established to completing best projects with a
                                         team of enthusiastic and impeccably experienced professionals from the industry.
                                         We determine to stick to certain goals such as quality of work, trust-worthiness,

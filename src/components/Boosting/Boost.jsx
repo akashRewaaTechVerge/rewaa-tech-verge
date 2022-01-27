@@ -1,62 +1,72 @@
-import React from 'react'
-import { FaReact, FaDigitalTachograph, FaFacebook, FaHandHoldingUsd, FaSearch, FaLaravel, FaApple, FaCode } from 'react-icons/fa'
-import {DiCodeigniter} from 'react-icons/di'
+import React, { useState } from 'react'
+import { FaReact, FaSearch, FaApple, FaAndroid, FaPhp } from 'react-icons/fa'
+import { BiMessageCheck } from 'react-icons/bi'
 import './Boost.css'
 import { RiTeamLine } from 'react-icons/ri'
 import tabShape from '../../images/tab/shape.png'
 import { boostData } from '../../data/boostData'
-import { MdBusinessCenter } from 'react-icons/md'
 const Boost = () => {
+    const [tab, setTab] = useState('Ios');
+    const handleClick = (e) => {
+        setTab({
+            tab: e.target.id
+        })
+    }
+
     return (
         <div>
-            <section className="tab-section">
+            <section className="tab-section" id='boost'>
                 <div className="container">
-                    <div className="section-title"><span>Boosting</span>
-                        <h3>Outstanding Digital Experience</h3>
+                    <div className="section-title"><span>We Are Hiring</span>
+                        <h3>Join Our Squad</h3>
                     </div>
                     <div className="tab boosting-list-tab">
                         <ul className="tabs">
-                            <li className="current"><i><RiTeamLine /></i><span>BDE/BDM</span></li>
-                            <li className="bg-eff7e9"><i><FaCode /></i><span>Web Design</span></li>
+                            <li className="current" onClick={handleClick}><i><FaApple /></i><span>Ios</span></li>
+                            <li className="bg-eff7e9" onClick={handleClick}><i><FaAndroid /></i><span>Android</span></li>
                             <li className="bg-fff8f0"><i><FaReact /></i><span>ReactJs</span>
                             </li>
-                            <li className="bg-ecfaf7"><i><FaLaravel /></i><span>Laravel</span></li>
-                            <li className="bg-f2f0fb"><i><DiCodeigniter /></i><span>Codeigniter</span></li>
-                            <li className="bg-c5ebf9"><i><FaApple/></i><span>Ios</span></li>
+                            <li className="bg-ecfaf7"><i><FaPhp /></i><span>Php</span></li>
+                            <li className="bg-f2f0fb"><i><BiMessageCheck /></i><span>Quality Assurance</span></li>
+                            <li className="bg-c5ebf9"><i><RiTeamLine /></i><span>BDE/BDM</span></li>
                         </ul>
                         <div className="tab_content">
                             {
                                 boostData.map((data, key) => {
                                     return (
-                                        <div id={data.tabName} className="tabs_item">
-                                            <div className="row align-items-center">
-                                                <div className="col-lg-5">
-                                                    <div className="tab-image"><img src={data.tab1Img} alt="image1" /></div>
-                                                </div>
-                                                <div className="col-lg-7">
-                                                    <div className="content">
-                                                        <h2>{data.title}</h2>
-                                                        <p>{data.desc}</p>
-                                                        <p>{data.desc1}</p>
+                                        <>
+                                            <div id={data.tabName} className="tabs_item" >
+                                                <div className="row align-items-center">
+                                                    <div className="col-lg-5">
+                                                        {console.log(tab + "tab")}
+                                                        <div className="tab-image"><img src={data.tab1Img} alt="image1" /></div>
                                                     </div>
-                                                    <div className="row">
-                                                        <div className="col-lg-6 col-md-6">
-                                                            <div className="tab-text-content"><i><FaSearch /></i>
-                                                                <p>{data.leftDesc}</p>
+                                                    <div className="col-lg-7">
+                                                        <div className="content">
+                                                            <h2>{data.title}</h2>
+                                                            <p>{data.desc}</p>
+                                                            <p>{data.desc1}</p>
+                                                        </div>
+                                                        <div className="row">
+                                                            <div className="col-lg-6 col-md-6">
+                                                                <div className="tab-text-content"><i><FaSearch /></i>
+                                                                    <p>{data.leftDesc}</p>
+                                                                </div>
+                                                            </div>
+                                                            <div className="col-lg-6 col-md-6">
+                                                                <div className="tab-text-content"><i><FaSearch /></i>
+                                                                    <p>{data.rightDesc}</p>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-6 col-md-6">
-                                                            <div className="tab-text-content"><i><FaSearch /></i>
-                                                                <p>{data.rightDesc}</p>
-                                                            </div>
-                                                        </div>
+                                                        <div className="tab-btn"><a className="default-btn-one"
+                                                            href="single-service/index.html">{data.btnTitle}</a></div>
                                                     </div>
-                                                    <div className="tab-btn"><a className="default-btn-one"
-                                                        href="single-service/index.html">{data.btnTitle}</a></div>
                                                 </div>
+                                                <div className="tab-shape"><img src={tabShape} alt="image1" /></div>
                                             </div>
-                                            <div className="tab-shape"><img src={tabShape} alt="image1" /></div>
-                                        </div>
+                                        </>
+
                                     )
                                 })
                             }
