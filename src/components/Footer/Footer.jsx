@@ -7,6 +7,7 @@ import fifteen from '../../images/shape/15.png'
 import twel from '../../images/shape/12.svg'
 import thirteen from '../../images/shape/13.svg'
 import logo from '../../images/logoOutline.png'
+import { HashLink as Link } from 'react-router-hash-link'
 import './Footer.css'
 const Footer = () => {
     return (
@@ -36,10 +37,10 @@ const Footer = () => {
                                     <h3>Services</h3>
                                 </div>
                                 <ul className="footer-quick-links">
-                                    <li><a href="about-us/index.html">Mobile Application</a></li>
-                                    <li><a href="projects/index.html">Custom Software</a></li>
-                                    <li><a href="services/index.html">Web Application</a></li>
-                                    <li><a href="team/index.html">UI/UX Design</a></li>
+                                    <li><Link to="/#service">Mobile Application</Link></li>
+                                    <li><Link to="/#service">Custom Software</Link></li>
+                                    <li><Link to="/#service">Web Application</Link></li>
+                                    <li><Link to="/#service">UI/UX Design</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -96,17 +97,12 @@ const Footer = () => {
             </footer>
             <div class="copyright-area">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <p>© 2021 RewaaTechVerge. All Rights Reserved
+                    <div class="row align-items-center text-center">
+                        <div class="col-lg-12">
+                            <p>© {new Date().getUTCFullYear()} RewaaTechVerge. All Rights Reserved
                             </p>
                         </div>
-                        <div class="col-lg-6">
-                            <ul>
-                                <li><a href="terms-conditions/index.html">Terms &amp; Conditions</a></li>
-                                <li><a href="privacy-policy/index.html">Privacy Policy</a></li>
-                            </ul>
-                        </div>
+                       
                     </div>
                 </div>
             </div>

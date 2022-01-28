@@ -1,9 +1,11 @@
 .tab-section {
     line-height: 1
 }
+
 .section-title {
     margin-bottom: 40px
 }
+
 .section-title h3 {
     font-size: 38px;
     color: #202647;
@@ -199,35 +201,56 @@
     display: block
 }
 
-@media only screen and (max-width: 767px){
-.pb-70 {
-    padding-bottom: 20px;
+.tab-image {
+    width: 250px;
+    height: 100%;
+    margin-left: 30px;
 }
-.pt-100, .ptb-100 {
-    padding-top: 50px;
+
+.list-heading {
+    font-weight: bold;
+    line-height: 3rem;
 }
-.section-title {
-    margin-bottom: 40px;
+
+.list-skill {
+    line-height: 3rem;
 }
-.boosting-list-tab .tabs li i {
-    font-size: 30px;
-}
-.boosting-list-tab .tabs li {
-    -webkit-flex: 0 0 48%;
-    -moz-box-flex: 0;
-    flex: 0 0 48%;
-    max-width: 46%;
-    font-size: 15px;
-    padding: 12px 10px;
-}
-.boosting-list-tab .tabs li span {
-    display: block;
-    margin-top: 4px;
-    font-size: 12px;
-}
-.boosting-list-tab .tabs li.bg-c5ebf9, .boosting-list-tab .tabs li.bg-ecfaf7, .boosting-list-tab .tabs li.bg-eff7e9, .boosting-list-tab .tabs li.bg-f2f0fb, .boosting-list-tab .tabs li.bg-fff8f0 {
-    background: unset
-}
+
+@media only screen and (max-width: 767px) {
+    .pb-70 {
+        padding-bottom: 20px;
+    }
+
+    .pt-100, .ptb-100 {
+        padding-top: 50px;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .boosting-list-tab .tabs li i {
+        font-size: 30px;
+    }
+
+    .boosting-list-tab .tabs li {
+        -webkit-flex: 0 0 48%;
+        -moz-box-flex: 0;
+        flex: 0 0 48%;
+        max-width: 46%;
+        font-size: 15px;
+        padding: 12px 10px;
+    }
+
+    .boosting-list-tab .tabs li span {
+        display: block;
+        margin-top: 4px;
+        font-size: 12px;
+    }
+
+    .boosting-list-tab .tabs li.bg-c5ebf9, .boosting-list-tab .tabs li.bg-ecfaf7, .boosting-list-tab .tabs li.bg-eff7e9, .boosting-list-tab .tabs li.bg-f2f0fb, .boosting-list-tab .tabs li.bg-fff8f0 {
+        background: unset
+    }
 
 }
 

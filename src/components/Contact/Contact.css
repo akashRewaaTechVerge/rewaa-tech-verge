@@ -324,7 +324,7 @@ select#flag-box{
 }
 
 .focus-border{
-    color: #2babe3;
+    color: red;
     display: inherit;
 
 }

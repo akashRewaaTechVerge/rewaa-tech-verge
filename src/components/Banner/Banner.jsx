@@ -28,9 +28,9 @@ import { NavHashLink as NavLink } from 'react-router-hash-link';
 const Banner = () => {
     return (
         <div>
-            <div className="main-banner" id='/'>
+            <div className="main-banner mt-5 " id='/'>
                 <div className="d-table">
-                    <div className="d-table-cell">
+                    <div className="d-table-cell" >
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col-lg-6 col-md-12">
@@ -92,6 +92,7 @@ const Banner = () => {
                 <div className="shape-img9"><img src={seven} alt="image9" /></div>
                 <div className="shape-img10"><img src={five} alt="image10" style={{ marginTop: "55%" }} /></div>
                 <div className="shape-img11"><img src={eleven} alt="image11" /></div>
+           
             </div>
         </div>
     )

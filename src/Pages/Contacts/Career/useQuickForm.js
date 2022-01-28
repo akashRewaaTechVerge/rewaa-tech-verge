@@ -9,8 +9,8 @@ const useQuickForm = (callback, validate) => {
         country_code: '',
         choose_country: '',
         contact_number: '',
-        type_of_development: '',
-        brief_your_requirement:''
+        type_of_development: 'Website',
+        brief_your_requirement: ''
 
     })
     const [errors, setErrors] = useState({
@@ -37,6 +37,14 @@ const useQuickForm = (callback, validate) => {
         });
     };
 
+    const countryChange = (value) => {
+        setValues(prevState => {
+            return {
+                ...prevState,
+                choose_country: value
+            }
+        })
+    }
     const handleMobileNumberChange = (value, code) => {
         setValues(prevState => {
             return {
@@ -64,7 +72,7 @@ const useQuickForm = (callback, validate) => {
             insertUser(values, validate(values), callback, isSubmitting);
     }
 
-    return { handleFlagChange, handleMobileNumberChange, handleChange, values, handleSubmit, errors }
+    return { handleFlagChange, handleMobileNumberChange, countryChange, handleChange, values, handleSubmit, errors }
 }
 
 export default useQuickForm

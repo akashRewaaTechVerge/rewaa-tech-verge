@@ -1,12 +1,12 @@
 import React from 'react'
 
 import Lottie  from 'react-lottie';
-import animationData from './components/form/success.json'
+import animationData from '../../Pages/Contacts/Career/success.json'
 
 function Success(props) {
  
   const defaultStyle={
-    color:'#d4b358',
+    color:'#2babe3',
     fontSize: 30,
     marginBottom:70,
     justifyItem:'center',
@@ -30,16 +30,11 @@ function Success(props) {
     console.log("faild")
   }
   return (
-  
     <>
-     
-     
-     
       <Lottie options={defaultOptions} style={lottieStyle}
         height={400}
         width={400}
       />
-    
       <p style={defaultStyle}>Thanks for contacting us!  We will be in touch with you shortly.</p>
     </>
     
