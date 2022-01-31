@@ -5,7 +5,7 @@ import useForm from './useForm'
 import validate from './ValidateForm';
 import 'react-intl-tel-input/dist/main.css';
 import "react-phone-input-2/lib/style.css";
-import { FaEnvelope, FaFacebookF, FaInstagram, FaLinkedinIn, FaMap, FaPhone, FaPinterest, FaTwitter } from 'react-icons/fa'
+import {  FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 const FormContact = ({ submitForm }) => {
     const [selectedFile] = useState("");
     const [error, setError] = useState("")
@@ -23,17 +23,14 @@ const FormContact = ({ submitForm }) => {
                     <div class="col-lg-6 col-md-6">
                         <div class="contact-text">
                             <h3>Get in Touch</h3>
-                            <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                Etiam tempus magna vel turpis pharetra dictum.</p>
-                            <p>Sed blandit tempus purus, sed sodales leo rutrum vel. Nam vulputate ipsum ac est congue,
-                                eget commodo magna lobortis.</p>
+                            <p>Rewaa Tech Verge will use this information to connect you with the right person to answer your question and may send related content.</p>
+                            <p>By checking the box, you allow Rewaa Tech Verge to store and process the information submitted above for this purpose</p>
+                            <p>You may unsubscribe from these communications at any time.</p>
                             <ul class="social-links">
-                                <li><a href="https://www.facebook.com/" target="_blank"><i><FaFacebookF /></i></a></li>
-                                <li><a href="https://twitter.com/" target="_blank"><i><FaTwitter /></i></a>
-                                </li>
-                                <li><a href="https://www.instagram.com/" target="_blank"><i><FaInstagram /></i></a></li>
-                                <li><a href="https://www.linkedin.com/" target="_blank"><i><FaLinkedinIn /></i></a></li>
-                                <li><a href="https://www.pinterest.com/" target="_blank"><i><FaPinterest /></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/rewaa-tech-verge/?viewAsMember=true" target="_blank"><i><FaLinkedinIn /></i></a></li>
+                                <li><a href="https://www.facebook.com/Rewaa-Tech-Verge-109376714849910" target="_blank"><i><FaFacebookF /></i></a></li>
+                                <li><a href="https://twitter.com/RewaatechV" target="_blank"><i><FaTwitter /></i></a></li>
+                                <li><a href="https://www.instagram.com/rewaa_tech_verge/" target="_blank"><i><FaInstagram /></i></a></li>
                             </ul>
                         </div>
                     </div>

@@ -79,12 +79,12 @@ const QuickFormContact = ({ submitForm }) => {
         <>
             <div>
                 <div class="page-title-area">
-                    <div class="container">
+                    <div class="container" id='contact'>
                         <div class="page-title-content">
-                            <h2>Career</h2>
+                            <h2>Contact</h2>
                             <ul>
                                 <li><Link to="/">Home</Link></li>
-                                <li>Career</li>
+                                <li>Contact</li>
                             </ul>
                         </div>
                     </div>

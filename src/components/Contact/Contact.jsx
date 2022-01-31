@@ -11,14 +11,14 @@ const Contact = () => {
     const data = Action();
     return (
         <>
-            <section class="contact-area ptb-100" id='Contact'>
+            <section class="contact-area ptb-100" id='career'>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-12">
                             <div class="contact-box">
                                 <div class="icon"><i><FaPhone /></i></div>
                                 <div class="content">
-                                    <h4>Phone / Fax</h4>
+                                    <h4>Phone</h4>
                                     <p>+91 8799315884</p>
                                     <p>&nbsp;</p>
                                 </div>

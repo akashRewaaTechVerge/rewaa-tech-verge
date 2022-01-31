@@ -7,32 +7,32 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/f
 const Team = () => {
     return (
         <div>
-            <section className="team-section pt-100 pb-70">
+            <section className="team-section pt-100 ">
                 <div className="container">
                     <div className="section-title"><span>Team</span>
                         <h3>Meet Our Team</h3>
                     </div>
                     <div className="row justify-content-center">
-                       {
-                           teamData.map((data,key)=>{
-                               return(
-                                <div className="col-lg-4 col-sm-6">
-                                <div className="team-item-area">
-                                    <div className="team-image"><img src={data.teamImg} height={data.size} alt="image1" /></div>
-                                    <div className="team-content">
-                                        <h3>{data.name}</h3><span>{data.role}</span>
-                                        <ul className="team-social">
-                                            <li><a href={data.social.linkdn} ><i><FaLinkedinIn/></i></a></li>
-                                            <li><a href={data.social.facebook}><i><FaFacebookF/></i></a></li>
-                                            <li><a href={data.social.twitter} ><i><FaTwitter/></i></a></li>
-                                            <li><a href={data.social.insta} ><i><FaInstagram/></i></a></li>
-                                        </ul>
+                        {
+                            teamData.map((data, key) => {
+                                return (
+                                    <div className="col-lg-4 col-sm-6">
+                                        <div className="team-item-area">
+                                            <div className="team-image"><img src={data.teamImg} height={data.size} alt="image1" /></div>
+                                            <div className="team-content">
+                                                <h3>{data.name}</h3><span>{data.role}</span>
+                                                <ul className="team-social">
+                                                    <li><a href={data.social.linkdn} target='_blank'><i><FaLinkedinIn /></i></a></li>
+                                                    <li><a href={data.social.facebook} target='_blank'><i><FaFacebookF /></i></a></li>
+                                                    <li><a href={data.social.twitter} target='_blank'><i><FaTwitter /></i></a></li>
+                                                    <li><a href={data.social.insta} target='_blank'><i><FaInstagram /></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                               )
-                           })
-                       }
+                                )
+                            })
+                        }
                     </div>
                 </div>
                 <div className="team-animation">

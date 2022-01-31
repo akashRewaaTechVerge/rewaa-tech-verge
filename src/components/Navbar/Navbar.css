@@ -374,6 +374,24 @@
     animation: fadeInDown .5s ease-in-out 0s 1 normal none running
 }
 
+.navbar-nav .my-link {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin:10px;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+.navbar-nav .my-link a.active {
+   color: #2babe3;
+}
+
+.navbar-nav .my-link a.inactive {
+    color: #221638;
+ }
+
+
 .navbar-toggler {
     border: none;
     border-radius: 0;

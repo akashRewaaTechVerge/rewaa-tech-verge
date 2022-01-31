@@ -8,13 +8,17 @@ import { FiPocket, FiInfo } from 'react-icons/fi'
 import { useState, useEffect } from 'react';
 import { CSSReset, MobileNavbar, Styles } from '../../components/Mobile/Mobile';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 const Navbar = () => {
     const [windowDimension, setWindowDimension] = useState(null);
     useEffect(() => {
         setWindowDimension(window.innerWidth);
     }, []);
+    
 
+    const router = useLocation().hash;
+    console.log(router);
+    const pathName=useLocation().pathname;
     useEffect(() => {
         function handleResize() {
             setWindowDimension(window.innerWidth);
@@ -24,8 +28,12 @@ const Navbar = () => {
     }, []);
 
     const isMobile = windowDimension <= 640;
-    const active={
-        color:'#2babe3'
+    const active = {
+        color: 'black'
+    }
+
+    const inActive={
+        color:'red'
     }
 
     return (
@@ -39,7 +47,7 @@ const Navbar = () => {
                                 isMobile ?
                                     <MobileNavbar.Wrapper>
                                         <MobileNavbar.Items>
-                                            <NavLink to="/#" smooth={true} spy='true' duration={2000}>
+                                            <NavLink className={pathName==="/"?'active':'inactive'} to="/#" smooth={true} spy='true' duration={2000}>
                                                 <MobileNavbar.Item>
                                                     <MobileNavbar.Icon>
                                                         <RiHome2Line size={16} />
@@ -47,7 +55,7 @@ const Navbar = () => {
                                                     Home
                                                 </MobileNavbar.Item>
                                             </NavLink>
-                                            <NavLink to="/#service" smooth={true} spy='true' duration={2000}>
+                                            <NavLink to="/#service" className={pathName==="#service"?'active':'inactive'} smooth={true} spy='true' duration={2000}>
                                                 <MobileNavbar.Item>
                                                     <MobileNavbar.Icon>
                                                         <RiCustomerService2Line size={16} />
@@ -56,28 +64,28 @@ const Navbar = () => {
                                                 </MobileNavbar.Item>
                                             </NavLink>
                                             <NavLink to="/#Contact" smooth={true} spy='true' duration={2000}>
-                                            <MobileNavbar.Item>
-                                                <MobileNavbar.Icon>
-                                                    <MdOutlineContactPage size={16} />
-                                                </MobileNavbar.Icon>
-                                                Contact
-                                            </MobileNavbar.Item>
+                                                <MobileNavbar.Item>
+                                                    <MobileNavbar.Icon>
+                                                        <MdOutlineContactPage size={16} />
+                                                    </MobileNavbar.Icon>
+                                                    Contact
+                                                </MobileNavbar.Item>
                                             </NavLink>
                                             <NavLink to="/Career" smooth={true} spy='true' duration={2000}>
-                                            <MobileNavbar.Item>
-                                                <MobileNavbar.Icon>
-                                                    <FiPocket size={16} />
-                                                </MobileNavbar.Icon>
-                                                Career
-                                            </MobileNavbar.Item>
+                                                <MobileNavbar.Item>
+                                                    <MobileNavbar.Icon>
+                                                        <FiPocket size={16} />
+                                                    </MobileNavbar.Icon>
+                                                    Career
+                                                </MobileNavbar.Item>
                                             </NavLink>
                                             <NavLink to="/#WhoAreWe" smooth={true} spy='true' duration={2000}>
-                                            <MobileNavbar.Item>
-                                                <MobileNavbar.Icon>
-                                                    <FiInfo size={16} />
-                                                </MobileNavbar.Icon>
-                                                WhoAreWe
-                                            </MobileNavbar.Item>
+                                                <MobileNavbar.Item>
+                                                    <MobileNavbar.Icon>
+                                                        <FiInfo size={16} />
+                                                    </MobileNavbar.Icon>
+                                                    WhoAreWe
+                                                </MobileNavbar.Item>
                                             </NavLink>
                                         </MobileNavbar.Items>
                                     </MobileNavbar.Wrapper>
@@ -86,15 +94,15 @@ const Navbar = () => {
                                         src={logo} alt="logo" style={{ width: 'auto', height: '60px', marginRight: '5px', float: 'left' }} /><span style={{ float: 'right', marginRight: '15px', marginTop: '5px', fontWeight: '600', fontSize: '2rem' }}>Rewaa<div style={{ float: 'revert', margin: '-10%', textAlign: 'center' }}>TechVerge</div></span></a>
                                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ul className="navbar-nav ">
-                                                <li className="nav-link "><NavLink to="/#" activeClassName='nav-item' activeStyle={active} smooth={true} spy='true' duration={2000} > Home</NavLink></li>
-                                                <li className="nav-link "><NavLink to="/#service" activeClassName='nav-item' smooth={true} spy='true' duration={2000} >Services </NavLink></li>
-                                                <li className="nav-link"><NavLink to="/#Contact" activeClassName='nav-item' smooth={true} spy='true' duration={2000} >Contact</NavLink></li>
-                                                <li className="nav-link"><NavLink to="/Career" activeClassName='nav-item' smooth={true} spy='true' duration={2000} >Career</NavLink></li>
-                                                <li className="nav-link"><NavLink to="/#wrw" activeClassName='nav-item' smooth={true} spy='true' duration={2000} >Who Are We</NavLink>
+                                                <li className="my-link"><NavLink to="/#"  className={pathName==="/"?'active':'inactive'} smooth={true} spy='true' duration={2000} > Home</NavLink></li>
+                                                <li className="my-link"><NavLink to="/#service" className={router=="#service"?'active':'inactive'} smooth={true} spy='true' duration={2000} >Services </NavLink></li>
+                                                <li className="my-link"><Link to="/Contact" className={pathName==="/Contact"?'active':'inactive'}  smooth={true} spy='true' duration={2000} >Contact</Link></li>
+                                                <li className="my-link"><NavLink to="/#career" className={router=="#career"?'active':'inactive'} smooth={true} spy='true' duration={2000} >Career</NavLink></li>
+                                                <li className="my-link"><NavLink to="/#wrw" className={router=="#wrw"?'active':'inactive'} smooth={true} spy='true' duration={2000} >Who Are We</NavLink>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div className="others-options">
+                                        {/* <div className="others-options">
                                             <div className="option-item"><i className="search-btn" style={{ display: 'block' }}><FaSearch /></i><i
                                                 className="close-btn fa fa-times "></i>
                                                 <div className="search-overlay search-popup" style={{ display: 'none' }}>
@@ -105,7 +113,7 @@ const Navbar = () => {
                                                 </div>
                                             </div>
                                             <div className="burger-menu"><span></span><span></span><span></span></div>
-                                        </div>
+                                        </div> */}
                                     </nav>
                             }
 

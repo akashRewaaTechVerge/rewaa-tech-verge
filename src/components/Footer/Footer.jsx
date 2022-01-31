@@ -24,14 +24,14 @@ const Footer = () => {
                                 </div>
                                 <p>We Build A Better Future With Tech</p>
                                 <ul className="footer-social">
-                                    <li><a href="https://www.linkedin.com/" className="bg-3955bc"><i><FaLinkedinIn /></i></a></li>
-                                    <li><a href="https://www.facebook.com/" className="bg-1da1f2"><i><FaFacebookF /></i></a></li>
-                                    <li><a href="https://twitter.com/" className="bg-004dff"><i><FaTwitter /></i></a></li>
-                                    <li><a href="https://www.instagram.com/" className="bg-0273af"><i><FaInstagram /></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/rewaa-tech-verge/?viewAsMember=true" className="bg-3955bc"><i><FaLinkedinIn /></i></a></li>
+                                    <li><a href="https://www.facebook.com/Rewaa-Tech-Verge-109376714849910" className="bg-1da1f2"><i><FaFacebookF /></i></a></li>
+                                    <li><a href="https://twitter.com/RewaatechV" className="bg-004dff"><i><FaTwitter /></i></a></li>
+                                    <li><a href="https://www.instagram.com/rewaa_tech_verge/" className="bg-0273af"><i><FaInstagram /></i></a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-lg-2 col-md-6 col-sm-6">
+                        <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="footer-item-area">
                                 <div className="footer-heading">
                                     <h3>Services</h3>
@@ -44,7 +44,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-lg-2 col-md-6 col-sm-6">
+                        {/* <div className="col-lg-2 col-md-6 col-sm-6">
                             <div className="footer-item-area">
                                 <div className="footer-heading">
                                     <h3>Who Are We</h3>
@@ -55,16 +55,16 @@ const Footer = () => {
                                     <li><a href="single-service/index.html">Our Goal</a></li>
                                 </ul>
                             </div>
-                        </div>
-                        <div className="col-lg-2 col-md-6 col-sm-6">
+                        </div> */}
+                        <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="footer-item-area">
                                 <div className="footer-heading">
                                     <h3>Company</h3>
                                 </div>
                                 <ul className="footer-quick-links">
-                                    <li><a href="single-service/index.html">About Us</a></li>
-                                    <li><a href="single-service/index.html">Contact</a></li>
-                                    <li><a href="single-service/index.html">Career</a></li>
+                                    <li><Link to="/">About Us</Link></li>
+                                    <li><Link to="/Contact">Contact</Link></li>
+                                    <li><Link to="/#career">Career</Link></li>
                                 </ul>
                             </div>
                         </div>
