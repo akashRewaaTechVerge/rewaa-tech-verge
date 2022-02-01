@@ -24,10 +24,10 @@ const Footer = () => {
                                 </div>
                                 <p>We Build A Better Future With Tech</p>
                                 <ul className="footer-social">
-                                    <li><a href="https://www.linkedin.com/company/rewaa-tech-verge/?viewAsMember=true" className="bg-3955bc"><i><FaLinkedinIn /></i></a></li>
-                                    <li><a href="https://www.facebook.com/Rewaa-Tech-Verge-109376714849910" className="bg-1da1f2"><i><FaFacebookF /></i></a></li>
-                                    <li><a href="https://twitter.com/RewaatechV" className="bg-004dff"><i><FaTwitter /></i></a></li>
-                                    <li><a href="https://www.instagram.com/rewaa_tech_verge/" className="bg-0273af"><i><FaInstagram /></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/rewaa-tech-verge/?viewAsMember=true" target='_blank' className="bg-3955bc"><i><FaLinkedinIn /></i></a></li>
+                                    <li><a href="https://www.facebook.com/Rewaa-Tech-Verge-109376714849910"  target='_blank' className="bg-1da1f2"><i><FaFacebookF /></i></a></li>
+                                    <li><a href="https://twitter.com/RewaatechV" className="bg-004dff"  target='_blank'><i><FaTwitter /></i></a></li>
+                                    <li><a href="https://www.instagram.com/rewaa_tech_verge/"  target='_blank' className="bg-0273af"><i><FaInstagram /></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -41,6 +41,8 @@ const Footer = () => {
                                     <li><Link to="/#service">Custom Software</Link></li>
                                     <li><Link to="/#service">Web Application</Link></li>
                                     <li><Link to="/#service">UI/UX Design</Link></li>
+                                    <li><Link to="/#service">Cloud Service</Link></li>
+                                    <li><Link to="/#service">Quality Assurance</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -62,7 +64,7 @@ const Footer = () => {
                                     <h3>Company</h3>
                                 </div>
                                 <ul className="footer-quick-links">
-                                    <li><Link to="/">About Us</Link></li>
+                                    <li><Link to="/#wrw">Who Are We</Link></li>
                                     <li><Link to="/Contact">Contact</Link></li>
                                     <li><Link to="/#career">Career</Link></li>
                                 </ul>
@@ -74,14 +76,14 @@ const Footer = () => {
                                     <h3>Contact</h3>
                                 </div>
                                 <div className="footer-info-contact"><i><IoIosCall /></i>
-                                    <h3>Phone</h3><span>+91 8799315884</span>
+                                    <span>+91 8799315884</span>
                                 </div>
                                 <div className="footer-info-contact"><i><FaEnvelope /></i>
-                                    <h3>Email</h3><span><a
+                                    <span><a
                                     >info@rewaatechverge.com</a></span>
                                 </div>
                                 <div className="footer-info-contact"><i><FaLocationArrow /></i>
-                                    <h3>Address</h3><span>E-809, Titanium City Center, 100 Feet Road, Satellite, Ahemdabad 380015</span>
+                                   <span>E-809, Titanium City Center, 100 Feet Road, Satellite, Ahemdabad 380015</span>
                                 </div>
                             </div>
                         </div>

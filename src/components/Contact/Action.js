@@ -14,7 +14,8 @@ export const Action = () => {
 
         headers.append('Content-Type', 'multipart/form-data');
         headers.append('Accept', 'application/json')
-        await axios.post("http://rewaatechverge.com/api/contact_us.php", formData, {
+
+        await axios.post("https://rewaatechverge.com/api/contact_us.php", formData, {
             headers: headers
         }).then(({ data: { status, message } }) => {
             if (status) {

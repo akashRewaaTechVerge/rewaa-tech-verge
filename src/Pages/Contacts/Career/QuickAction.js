@@ -1,10 +1,9 @@
 import axios from 'axios';
 import { useState } from 'react'
-
 export const Action = () => {
     let [users,] = useState("")
-    const insertUser = async (newUser, errors, callback) => {
 
+    const insertUser = async (newUser, errors, callback) => {
         let headers = new Headers();
         let formData = new FormData();
 
@@ -19,7 +18,7 @@ export const Action = () => {
         }).then(({ data: { status, message } }) => {
             if (status) {
                 console.log("Success")
-                callback(Object.keys(errors).length === 0 && status, "")
+                callback(Object.keys(errors).length === 0 && status, "");
             } else {
 
                 callback(false, message);

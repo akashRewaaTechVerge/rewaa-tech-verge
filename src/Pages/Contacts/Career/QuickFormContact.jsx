@@ -7,7 +7,7 @@ import 'react-intl-tel-input/dist/main.css';
 import "react-phone-input-2/lib/style.css";
 import contactLeft from '../../../images/shape/contactleft.svg'
 import countryList from 'react-select-country-list';
-import Select from 'react-select';
+import ScrollToTop from '../../../utils/ScrollToTop'
 import { Link } from 'react-router-dom';
 import { CountryDropdown } from 'react-country-region-selector';
 const QuickFormContact = ({ submitForm }) => {
@@ -94,7 +94,7 @@ const QuickFormContact = ({ submitForm }) => {
                         <div className='consult-form-left'>
                             <h4 className='headings-lg'>Quick Contact</h4>
                             <p className='description_sm'>Have an !dea or need help with your current business?</p>
-                            <p className='paragraph'>For immediate assistance in sales or support, please call us on:</p>
+
                             <a href='' className='contact_button arrow-triangle right'><img src='' />+91-879-931-5884</a>
                             <img className=" lazyloaded" title="Book Your Free Consultation " src={contactLeft}></img>
                         </div>
@@ -175,6 +175,7 @@ const QuickFormContact = ({ submitForm }) => {
                 </div>
 
             </div>
+            <ScrollToTop />
         </>
     )
 };

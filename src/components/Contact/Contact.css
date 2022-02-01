@@ -127,17 +127,38 @@
 }
 
 .contact-text {
-    margin-top: 40px
+    margin-top: -100px;
 }
 
-.contact-text h3 {
-    font-size: 22px;
-    margin-bottom: 14px;
-    font-weight: 600
+.contact-text .headings-lg {
+    color: #2babe3;
+    font-family: PT Sans;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    padding-bottom: 50px;
+    position: relative;
+    text-align: center;
 }
+
+.contact-text .headings-lg::after {
+    content: '';
+    position: absolute;
+    background: url(../../images/shape.svg);
+    height: 10px;
+    width: 59px;
+    background-repeat: no-repeat;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 21px;
+}
+
 
 .contact-text p {
-    margin-top: 0
+    font-size: 2rem;
+    margin-top: 0;
 }
 
 .contact-text .social-links {
@@ -177,7 +198,7 @@
 }
 
 .contact-form-rewaa .form-group-contact .form-control-contact {
-    height: 50px;
+
     font-size: 16px;
     width: 100%;
     padding: 10px 20px;
@@ -203,8 +224,8 @@
     margin-bottom: 0 !important;
 }
 
-.form-control-contact [type="radio"]::before{
-    background:black;
+.form-control-contact [type="radio"]::before {
+    background: black;
 }
 
 .contact-form-rewaa [type="radio"]:checked+label:before, .contact-form-rewaa [type="radio"]:not(:checked)+label:before {
@@ -212,7 +233,7 @@
     position: absolute;
     left: 0;
     top: 0;
-   
+
     border: 1px solid #fff;
     border-radius: 100%;
     background: #000;
@@ -253,10 +274,11 @@
     box-shadow: none
 }
 
-select#flag-box{
-    border:0px;
+select#flag-box {
+    border: 0px;
     outline: 0px;
 }
+
 .contact-form-rewaa textarea {
     height: 150px !important
 }
@@ -279,9 +301,9 @@ select#flag-box{
     font-weight: 500
 }
 
-.text-danger{
-    color:red;
-  }
+.text-danger {
+    color: red;
+}
 
 .contact-form-rewaa .send-btn .send-btn-one:hover {
     background-color: #fff;
@@ -323,11 +345,12 @@ select#flag-box{
     transition: .6s
 }
 
-.focus-border{
+.focus-border {
     color: red;
     display: inherit;
 
 }
+
 .error-content .default-btn-one:hover {
     text-decoration: none;
     background-color: #fff;
@@ -343,4 +366,10 @@ select#flag-box{
     .page-title-content h2 {
         font-size: 25px;
     }
-} 
+}
+
+@media only screen and(max-width:480px) {
+    .contact-form-rewaa .form-group-contact .form-control-contact {
+        align-items: center;
+    }
+}

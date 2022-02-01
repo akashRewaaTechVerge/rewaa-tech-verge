@@ -23,21 +23,12 @@
     margin: auto;
 }
 
-.headings-lg {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 46px;
-    line-height: 60px;
-    text-align: center;
-    color: #2babe3;
-    position: relative;
-    padding-bottom: 50px;
-}
+
 
 .headings-lg::after {
     content: '';
     position: absolute;
-    background: url(../../images/shape.svg);
+    background: url(../../images/shape.svg) ;
     height: 10px;
     width: 59px;
     background-repeat: no-repeat;
@@ -350,6 +341,25 @@ input {
     -moz-osx-font-smoothing: grayscale;
     font-family: arial, sans-serif;
 }
+
+textarea::placeholder{
+    font-family: sans-serif
+}
+textarea::-webkit-input-placeholder {
+    font-family: sans-serif
+  }
+  
+  textarea:-moz-placeholder { /* Firefox 18- */
+    font-family: sans-serif
+  }
+  
+  textarea::-moz-placeholder {  /* Firefox 19+ */
+    font-family: sans-serif 
+  }
+  
+  textarea:-ms-input-placeholder {
+    font-family: sans-serif
+  }
 
 label {
     cursor: default;

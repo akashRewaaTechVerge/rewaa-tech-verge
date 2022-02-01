@@ -14,11 +14,11 @@ const Navbar = () => {
     useEffect(() => {
         setWindowDimension(window.innerWidth);
     }, []);
-    
+
 
     const router = useLocation().hash;
     console.log(router);
-    const pathName=useLocation().pathname;
+    const pathName = useLocation().pathname;
     useEffect(() => {
         function handleResize() {
             setWindowDimension(window.innerWidth);
@@ -28,13 +28,6 @@ const Navbar = () => {
     }, []);
 
     const isMobile = windowDimension <= 640;
-    const active = {
-        color: 'black'
-    }
-
-    const inActive={
-        color:'red'
-    }
 
     return (
         <Styles.Wrapper>
@@ -47,7 +40,7 @@ const Navbar = () => {
                                 isMobile ?
                                     <MobileNavbar.Wrapper>
                                         <MobileNavbar.Items>
-                                            <NavLink className={pathName==="/"?'active':'inactive'} to="/#" smooth={true} spy='true' duration={2000}>
+                                            <NavLink to="/#" smooth={true} spy='true' duration={2000}>
                                                 <MobileNavbar.Item>
                                                     <MobileNavbar.Icon>
                                                         <RiHome2Line size={16} />
@@ -55,7 +48,7 @@ const Navbar = () => {
                                                     Home
                                                 </MobileNavbar.Item>
                                             </NavLink>
-                                            <NavLink to="/#service" className={pathName==="#service"?'active':'inactive'} smooth={true} spy='true' duration={2000}>
+                                            <NavLink to="/#service" className={pathName === "#service" ? 'active' : 'inactive'} smooth={true} spy='true' duration={2000}>
                                                 <MobileNavbar.Item>
                                                     <MobileNavbar.Icon>
                                                         <RiCustomerService2Line size={16} />
@@ -63,15 +56,15 @@ const Navbar = () => {
                                                     Service
                                                 </MobileNavbar.Item>
                                             </NavLink>
-                                            <NavLink to="/#Contact" smooth={true} spy='true' duration={2000}>
+                                            <Link to="/Contact" smooth={true} spy='true' duration={2000}>
                                                 <MobileNavbar.Item>
                                                     <MobileNavbar.Icon>
                                                         <MdOutlineContactPage size={16} />
                                                     </MobileNavbar.Icon>
                                                     Contact
                                                 </MobileNavbar.Item>
-                                            </NavLink>
-                                            <NavLink to="/Career" smooth={true} spy='true' duration={2000}>
+                                            </Link>
+                                            <NavLink to="/#career" smooth={true} spy='true' duration={2000}>
                                                 <MobileNavbar.Item>
                                                     <MobileNavbar.Icon>
                                                         <FiPocket size={16} />
@@ -79,7 +72,7 @@ const Navbar = () => {
                                                     Career
                                                 </MobileNavbar.Item>
                                             </NavLink>
-                                            <NavLink to="/#WhoAreWe" smooth={true} spy='true' duration={2000}>
+                                            <NavLink to="/#wrw" smooth={true} spy='true' duration={2000}>
                                                 <MobileNavbar.Item>
                                                     <MobileNavbar.Icon>
                                                         <FiInfo size={16} />
@@ -94,13 +87,19 @@ const Navbar = () => {
                                         src={logo} alt="logo" style={{ width: 'auto', height: '60px', marginRight: '5px', float: 'left' }} /><span style={{ float: 'right', marginRight: '15px', marginTop: '5px', fontWeight: '600', fontSize: '2rem' }}>Rewaa<div style={{ float: 'revert', margin: '-10%', textAlign: 'center' }}>TechVerge</div></span></a>
                                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ul className="navbar-nav ">
-                                                <li className="my-link"><NavLink to="/#"  className={pathName==="/"?'active':'inactive'} smooth={true} spy='true' duration={2000} > Home</NavLink></li>
-                                                <li className="my-link"><NavLink to="/#service" className={router=="#service"?'active':'inactive'} smooth={true} spy='true' duration={2000} >Services </NavLink></li>
-                                                <li className="my-link"><Link to="/Contact" className={pathName==="/Contact"?'active':'inactive'}  smooth={true} spy='true' duration={2000} >Contact</Link></li>
-                                                <li className="my-link"><NavLink to="/#career" className={router=="#career"?'active':'inactive'} smooth={true} spy='true' duration={2000} >Career</NavLink></li>
-                                                <li className="my-link"><NavLink to="/#wrw" className={router=="#wrw"?'active':'inactive'} smooth={true} spy='true' duration={2000} >Who Are We</NavLink>
+                                                <li className="my-link"><NavLink to="/#" className={pathName === "/#" ? 'active' : 'inactive'} smooth={true} spy='true' duration={2000} > Home</NavLink></li>
+                                                <li className="my-link"><NavLink to="/#service" className={router === "#service" ? 'active' : 'inactive'} smooth={true} spy='true' duration={2000} >Services </NavLink></li>
+                                                <li className="my-link"><Link to="/Contact" className={pathName === "/Contact" ? 'active' : 'inactive'} smooth={true} spy='true' duration={2000} >Contact</Link></li>
+                                                <li className="my-link"><NavLink to="/#career" className={router === "#career" ? 'active' : 'inactive'} smooth={true} spy='true' duration={2000} >Career</NavLink></li>
+                                                <li className="my-link"><NavLink to="/#wrw" className={router === "#wrw" ? 'active' : 'inactive'} smooth={true} spy='true' duration={2000} >Who Are We</NavLink>
                                                 </li>
                                             </ul>
+                                        </div>
+                                        <div className='others-options'>
+                                        <div className="burger-menu"><div className="banner-btn"><NavLink className="default-btn-one" to="/#boost">
+                                            We Are Hiring</NavLink>
+                                            {/* <div className="video-btn popup-youtube">Watch Video <i><FaPlay/></i></div> */}
+                                        </div></div>
                                         </div>
                                         {/* <div className="others-options">
                                             <div className="option-item"><i className="search-btn" style={{ display: 'block' }}><FaSearch /></i><i

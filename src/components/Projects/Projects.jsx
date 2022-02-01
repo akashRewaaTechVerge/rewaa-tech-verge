@@ -13,10 +13,10 @@ const Projects = () => {
                         {projectData.map((pro, key) => {
                             return (
                                 <div  className="col-lg-4 col-sm-6">
-                                    <div key={key} className="single-project-box"><a href="single-project/index.html">
+                                    <div key={key} className="single-project-box"><a href="#">
                                         <img src={pro.image} alt="image1" /></a>
                                         <div className="project-hover-content">
-                                            <h3><a href="single-project/index.html">{pro.title}</a></h3>
+                                            <h3><a href="#">{pro.title}</a></h3>
                                         </div>
                                     </div>
                                 </div>
