@@ -41,7 +41,7 @@ export const boostData = [
         title: "Php Developer",
         desc: 'Experience :- 2-3 Years',
         leftDesc: "<ul><li>Good English Communication</li><li>Good Knowledge on PHP frameworks (Laravel/CodeIgniter) </li></li><li>Good Understanding of MVC</li><li>Analyze, Create and Normalize database independently</li><li>Strong in Javascript, Ajax, Jquery</li></ul>",
-        rightDesc: "<h3 class='list-heading'>Required Skills:</h3><ul><li>Android</li><li>Kotlin</li><li>OOPS</li><li>Payment gateway</li></ul>",
+        rightDesc: "<h3 class='list-heading'>Required Skills:</h3><ul><li>Strong in Javascript</li><li>Ajax</li><li>JQuery</li><li>Any JS Framework</li></ul>",
         btnTitle: "Apply",
         mailTo:"mailto:hr@rewaatechverge.com?subject='Apply For Php Developer'",
         tab1Img: tab4
