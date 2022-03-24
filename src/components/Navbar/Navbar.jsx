@@ -83,8 +83,8 @@ const Navbar = () => {
                                         </MobileNavbar.Items>
                                     </MobileNavbar.Wrapper>
                                     :
-                                    <nav className="navbar navbar-expand-md navbar-light"><a className="navbar-brand" href="index.html" style={{ display: 'inline-block' }}><img
-                                        src={logo} alt="logo" style={{ width: 'auto', height: '60px', marginRight: '5px', float: 'left' }} /><span style={{ float: 'right', marginRight: '15px', marginTop: '5px', fontWeight: '600', fontSize: '2rem' }}>Rewaa<div style={{ float: 'revert', margin: '-10%', textAlign: 'center' }}>TechVerge</div></span></a>
+                                    <nav className="navbar navbar-expand-md navbar-light"><NavLink className="navbar-brand" to="/#" style={{ display: 'inline-block' }}><img
+                                        src={logo} alt="logo" style={{ width: 'auto', height: '60px', marginRight: '5px', float: 'left' }} /><span style={{ float: 'right', marginRight: '15px', marginTop: '5px', fontWeight: '600', fontSize: '2rem' }}>Rewaa<div style={{ float: 'revert', margin: '-10%', textAlign: 'center' }}>TechVerge</div></span></NavLink>
                                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ul className="navbar-nav ">
                                                 <li className="my-link"><NavLink to="/#" className={pathName === "/#" ? 'active' : 'inactive'} smooth={true} spy='true' duration={2000} > Home</NavLink></li>
@@ -96,10 +96,10 @@ const Navbar = () => {
                                             </ul>
                                         </div>
                                         <div className='others-options'>
-                                        <div className="burger-menu"><div className="banner-btn"><NavLink className="default-btn-one" to="/#boost">
-                                            We Are Hiring</NavLink>
-                                            {/* <div className="video-btn popup-youtube">Watch Video <i><FaPlay/></i></div> */}
-                                        </div></div>
+                                            <div className="burger-menu"><div className="banner-btn"><NavLink className="default-btn-one" to="/#boost">
+                                                We Are Hiring</NavLink>
+                                                {/* <div className="video-btn popup-youtube">Watch Video <i><FaPlay/></i></div> */}
+                                            </div></div>
                                         </div>
                                         {/* <div className="others-options">
                                             <div className="option-item"><i className="search-btn" style={{ display: 'block' }}><FaSearch /></i><i
