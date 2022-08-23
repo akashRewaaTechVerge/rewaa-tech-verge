@@ -4,6 +4,7 @@ import './Navbar.css';
 import { FaSearch } from 'react-icons/fa'
 import { MdOutlineContactPage } from 'react-icons/md'
 import { RiCustomerService2Line, RiHome2Line } from 'react-icons/ri'
+import { SiWheniwork } from 'react-icons/si'
 import { FiPocket, FiInfo } from 'react-icons/fi'
 import { useState, useEffect } from 'react';
 import { CSSReset, MobileNavbar, Styles } from '../../components/Mobile/Mobile';
@@ -80,6 +81,14 @@ const Navbar = () => {
                                                     WhoAreWe
                                                 </MobileNavbar.Item>
                                             </NavLink>
+                                            <NavLink to="/Work" smooth={true} spy='true' duration={2000}>
+                                                <MobileNavbar.Item>
+                                                    <MobileNavbar.Icon>
+                                                        <SiWheniwork size={16} />
+                                                    </MobileNavbar.Icon>
+                                                    Work
+                                                </MobileNavbar.Item>
+                                            </NavLink>
                                         </MobileNavbar.Items>
                                     </MobileNavbar.Wrapper>
                                     :
@@ -91,8 +100,9 @@ const Navbar = () => {
                                                 <li className="my-link"><NavLink to="/#service" className={router === "#service" ? 'active' : 'inactive'} smooth={true} spy='true' duration={2000} >Services </NavLink></li>
                                                 <li className="my-link"><Link to="/Contact" className={pathName === "/Contact" ? 'active' : 'inactive'} smooth={true} spy='true' duration={2000} >Contact</Link></li>
                                                 <li className="my-link"><NavLink to="/#career" className={router === "#career" ? 'active' : 'inactive'} smooth={true} spy='true' duration={2000} >Career</NavLink></li>
-                                                <li className="my-link"><NavLink to="/#wrw" className={router === "#wrw" ? 'active' : 'inactive'} smooth={true} spy='true' duration={2000} >Who Are We</NavLink>
-                                                </li>
+                                                <li className="my-link"><NavLink to="/#wrw" className={router === "#wrw" ? 'active' : 'inactive'} smooth={true} spy='true' duration={2000} >Who Are We</NavLink></li>
+                                                <li className="my-link"><NavLink to="/Work" className={pathName === "/Work" ? 'active' : 'inactive'} smooth={true} spy='true' duration={2000} >Work</NavLink></li>
+
                                             </ul>
                                         </div>
                                         <div className='others-options'>

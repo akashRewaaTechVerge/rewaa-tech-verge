@@ -6,6 +6,7 @@ import { Footer, Navbar } from './components';
 import { BackToTop } from './components';
 import Success from './Pages/Success/Success'
 import Whatsapp from './components/Whatsapp/Whatsapp';
+import Work from './components/Work/Work';
 
 
 
@@ -14,16 +15,17 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar/>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Main />}></Route>
           <Route path="/Contact" element={<Career />}></Route>
-          <Route path="/Success" element={<Success/>}></Route>
+          <Route path="/Success" element={<Success />}></Route>
+          <Route path='/Work' element={<Work />}></Route>
           <Route path="/" />
         </Routes>
-      <Footer/>
+        <Footer />
       </Router>
-      <Whatsapp/>
+      <Whatsapp />
       <BackToTop />
     </>
   );

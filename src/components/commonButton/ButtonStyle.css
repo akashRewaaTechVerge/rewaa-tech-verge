@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.button_cont {
+    width: 12%;
+    font-family: 'Poppins' sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .button_cont {
+        width: auto;
+        font-size: 8px !important;
+        right: 37% !important;
+    }
+}
